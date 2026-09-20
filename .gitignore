@@ -1,0 +1,14 @@
+.env
+.runtime/
+.venv/
+__pycache__/
+*.pyc
+downloads/
+.idea/
+.DS_Store
+test-results/
+
+# Local planning and generated build outputs
+.planning/
+*.ipa
+*.log

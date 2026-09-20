@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/EEliberto/Pastel-macOS",
+  "commit": "20934736051bfdcfdd6362920fbf04c249ce1af5",
+  "files": {
+    "NodeProject/src/gsa.js": "12535bc02bb5594bd00f174f4cacc91def62fbf6ab2f4765828f5b6ae4ba8bf4",
+    "NodeProject/src/client.js": "0b7b4dc1fb53e51c54d4d74b9962ea10978f4d1f07974f4a39b9a3cd48575feb",
+    "NodeProject/src/device.js": "6506b2a386639d738ff7cca50c8f71f0f855f9973de9439795ae2dab5cd5b746",
+    "NodeProject/src/catalog.js": "63f48d6c7745e6976331f948eb56dffc36296d4a54e1962a12707ae39af80f1b",
+    "NodeProject/src/credentials.js": "165c2dba8daef8d1c9883f6d840710ded2f595cd37e34bb83d9e4b61275674d3",
+    "NodeProject/src/downloader.js": "92ff923d71444800a5aedea233a99fab95edbc0b7d7debe7f7b260af610d7869",
+    "NodeProject/src/Signature.js": "8abb275ed79bfc5935ef2adb8cd5b8145d62db093cbac8d76afbc89ef334d81f",
+    "NodeProject/src/ipa.js": "9abbcd1db058987e87763fa6125d7185be6e71cac859e1fd73463e890739a16f",
+    "NodeProject/src/i18n.js": "811d02553beebf356c7234d7257d31a8fe29c60c31c3a977ca425198b8a01fcc",
+    "NodeProject/package.json": "f2b1214f45b7f797248b5af0b0c5bf112921b28fb5553066f34d8e90764e528c",
+    "NodeProject/package-lock.json": "cd3170c18a9618b570536005fc35bc562ac2b92795fe3204ecf9cc9d12847d6f",
+    "Scripts/SAPSigner.m": "d23a5e8553ff1397ef7e7281421d461ba0056c7384abfd365d8cd41ee56bfbdc",
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  }
+}

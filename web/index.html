@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="description" content="查询iOS应用历史版本，使用自己的Apple账户获取下载地址或完整IPA安装包。"><title>iOS 历史应用 · 版本档案与下载</title><link rel="icon" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/base.css"><link rel="stylesheet" href="/assets/catalog.css"><script defer src="/assets/catalog.js"></script><script defer src="/assets/download.js"></script></head><body><header class="site-header"><a class="site-brand" href="/"><span class="brand-symbol" aria-hidden="true">↶</span><span>iOS 历史应用<small>VERSION ARCHIVE</small></span></a><nav aria-label="主导航"><a href="#search">查找应用</a><a href="#download">下载任务</a><a href="#help">使用说明</a></nav></header><main class="site-main">
+<div class="iosapp" data-api="/api/v1/">
+    <header class="iosapp-hero">
+        <div class="iosapp-intro"><span class="iosapp-eyebrow">iOS HISTORY · 应用档案</span>
+            <h1>iOS 历史 APP 下载</h1>
+            <p>找到熟悉的应用，回看每一次版本更迭。</p>
+            <div class="iosapp-badges"><span>版本查询</span><span class="iosapp-muted-badge">使用自己的 Apple 账户下载</span></div>
+        </div>
+        <div class="iosapp-art" aria-hidden="true"><div class="iosapp-orbit"></div><div class="iosapp-stack iosapp-stack-back">VERSION HISTORY</div><div class="iosapp-stack"><div class="iosapp-appmark">↶</div><div><b>让版本，有迹可循</b><span>DISCOVER · EXPLORE · REVISIT</span></div><div class="iosapp-timeline"><i></i><i></i><i></i><i></i></div></div></div>
+    </header>
+    <section id="search" class="iosapp-panel iosapp-search-panel" aria-labelledby="iosapp-search-title">
+        <div class="iosapp-section-heading"><div><h2 id="iosapp-search-title">查找一个应用</h2><p>输入应用名称、App ID，或粘贴 App Store 链接</p></div><span class="iosapp-source-label">应用信息来自 App Store</span></div>
+        <form class="iosapp-form" role="search">
+            <div class="iosapp-query-field"><label class="iosapp-sr" for="iosapp-query">应用名称、App ID 或 App Store 链接</label><input id="iosapp-query" name="q" maxlength="120" placeholder="搜索应用，例如：微信" required autocomplete="off"></div>
+            <div class="iosapp-country-field"><label class="iosapp-sr" for="iosapp-country">商店地区</label><select id="iosapp-country" name="country"><optgroup label="常用地区"><option value="cn">中国大陆</option><option value="hk">中国香港</option><option value="tw">中国台湾</option><option value="us">美国</option><option value="jp">日本</option><option value="sg">新加坡</option></optgroup><optgroup label="亚洲与大洋洲"><option value="kr">韩国</option><option value="mo">中国澳门</option><option value="my">马来西亚</option><option value="th">泰国</option><option value="vn">越南</option><option value="ph">菲律宾</option><option value="id">印度尼西亚</option><option value="in">印度</option><option value="pk">巴基斯坦</option><option value="au">澳大利亚</option><option value="nz">新西兰</option></optgroup><optgroup label="欧洲"><option value="gb">英国</option><option value="de">德国</option><option value="fr">法国</option><option value="it">意大利</option><option value="es">西班牙</option><option value="pt">葡萄牙</option><option value="nl">荷兰</option><option value="be">比利时</option><option value="ch">瑞士</option><option value="at">奥地利</option><option value="se">瑞典</option><option value="no">挪威</option><option value="dk">丹麦</option><option value="fi">芬兰</option><option value="ie">爱尔兰</option><option value="pl">波兰</option><option value="cz">捷克</option><option value="gr">希腊</option><option value="ro">罗马尼亚</option><option value="hu">匈牙利</option><option value="tr">土耳其</option><option value="ua">乌克兰</option><option value="ru">俄罗斯</option></optgroup><optgroup label="美洲"><option value="ca">加拿大</option><option value="mx">墨西哥</option><option value="br">巴西</option><option value="ar">阿根廷</option><option value="cl">智利</option><option value="co">哥伦比亚</option><option value="pe">秘鲁</option></optgroup><optgroup label="中东与非洲"><option value="ae">阿联酋</option><option value="sa">沙特阿拉伯</option><option value="il">以色列</option><option value="qa">卡塔尔</option><option value="kw">科威特</option><option value="eg">埃及</option><option value="za">南非</option><option value="ng">尼日利亚</option><option value="ke">肯尼亚</option><option value="ma">摩洛哥</option></optgroup></select></div>
+            <button type="submit" class="iosapp-primary">搜索应用 <span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="iosapp-examples"><span>试着查找</span><button type="button" data-query="414478124">微信</button><button type="button" data-query="1142110895">哔哩哔哩</button><button type="button" data-query="6448311069" data-country="us">ChatGPT · 美区</button></div>
+        <p class="iosapp-status" role="status" aria-live="polite">选择商店地区，开始查找应用的版本记录。</p>
+        <div class="iosapp-apps" aria-label="应用搜索结果"></div>
+    </section>
+    <section class="iosapp-panel iosapp-details" hidden aria-labelledby="iosapp-detail-title">
+        <div class="iosapp-app-detail"></div>
+        <div class="iosapp-version-heading"><div><h2 id="iosapp-detail-title" tabindex="-1">历史版本</h2><p class="iosapp-version-summary" role="status" aria-live="polite"></p></div><label class="iosapp-filter-label">筛选版本<input type="search" class="iosapp-version-filter" placeholder="例如 8.0" maxlength="64"></label></div>
+        <p class="iosapp-version-note">公开记录不保证完整，也不代表对应安装包仍可获取。商店地区用于应用搜索，历史版本库未按地区区分。</p>
+        <div class="iosapp-table-wrap"><table class="iosapp-table"><caption class="iosapp-sr">公开历史版本记录</caption><thead><tr><th scope="col">版本</th><th scope="col">版本 ID</th><th scope="col">记录时间</th><th scope="col">操作</th></tr></thead><tbody></tbody></table></div>
+        <div class="iosapp-pagination"><button type="button" class="iosapp-prev">上一页</button><span class="iosapp-page-label"></span><button type="button" class="iosapp-next">下一页</button></div>
+    </section>
+    <section id="download" class="iosapp-panel iosapp-download-panel" aria-labelledby="iosapp-download-title">
+        <span class="iosapp-info-num">YOUR ACCOUNT · YOUR DOWNLOAD</span>
+        <h2 id="iosapp-download-title" tabindex="-1">生成你的下载地址</h2>
+        <p class="iosapp-download-intro">在历史版本中点击“下载”，或直接填写编号。使用已拥有该应用的 Apple 账户验证后，获取对应版本的下载地址。</p>
+        <form class="iosapp-download-form" method="post" action="/api/v1/jobs">
+            <div class="iosapp-download-fields">
+                <label class="iosapp-mode-label">下载方式<select name="mode"><option value="official">Apple 官方直链（不在本站保存 IPA）</option><option value="package">完整 IPA（本站补写账号授权数据）</option></select></label>
+                <label>App ID<input name="appId" inputmode="numeric" pattern="[1-9][0-9]{4,14}" maxlength="15" placeholder="例如 414478124" required></label>
+                <label>版本 ID<input name="versionId" inputmode="numeric" pattern="[1-9][0-9]{0,19}" maxlength="20" placeholder="填写数字版本编号" required></label>
+                <label>Apple ID<input id="iosapp-apple-account" autocomplete="off" maxlength="254" placeholder="你的邮箱或手机号" required></label>
+                <label>密码<input id="iosapp-apple-password" type="password" autocomplete="off" maxlength="1024" placeholder="仅用于本次 Apple 验证" required></label>
+            </div>
+            <label class="iosapp-consent"><input type="checkbox" name="consent" required><span>我使用自己的 Apple 账户，并知晓账号信息会加密提交至本站下载服务，用于向 Apple 验证。密码不写入数据库或日志，临时会话在任务结束后清除。</span></label>
+            <button type="submit" class="iosapp-primary iosapp-start-download" disabled>登录并生成下载</button>
+        </form>
+        <form class="iosapp-otp-form" method="post" action="/api/v1/jobs" hidden>
+            <label>Apple 验证码<input id="iosapp-apple-code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" placeholder="本次登录的6位验证码" required></label>
+            <button type="submit" class="iosapp-primary">验证并继续</button>
+        </form>
+        <p class="iosapp-download-status" role="status" aria-live="polite">正在连接下载服务…</p>
+        <progress class="iosapp-download-progress" max="100" hidden aria-label="下载任务进度"></progress>
+        <div class="iosapp-download-actions" hidden><a class="iosapp-primary iosapp-download-link" hidden rel="noopener noreferrer" referrerpolicy="no-referrer">下载安装包</a><button type="button" class="iosapp-copy-link" hidden>复制下载地址</button><button type="button" class="iosapp-cancel-job">取消任务</button></div>
+        <p class="iosapp-download-policy">官方直链下载的是 Apple 原始包，可能仍需补写账号授权数据才能安装；本站仅在内存保留链接15分钟，链接的实际有效期由 Apple 决定。完整 IPA 模式上限2GB，文件保存一小时。两种方式都仅供账号本人使用，本站不会自动购买应用。</p>
+    </section>
+    <div id="help" class="iosapp-info-grid">
+        <section class="iosapp-panel"><span class="iosapp-info-num">01 / 版本档案</span><h2>把版本信息查清楚</h2><p>查看应用信息与历史版本，复制版本 ID，便于查阅、记录与后续使用。</p></section>
+        <section class="iosapp-panel"><span class="iosapp-info-num">02 / 账号验证</span><h2>先登录，按需验证</h2><p>提交账号密码后向 Apple 发起验证；只有需要时才询问验证码，两步使用同一认证会话。</p></section>
+        <section class="iosapp-panel"><span class="iosapp-info-num">03 / 使用说明</span><h2>版本编号不是安装包</h2><p>历史版本 ID 用于识别构建版本；记录时间是数据源的收录时间，不等同于应用发布日期。</p></section>
+    </div>
+    <footer class="iosapp-footnote">版本数据按可用性查询 Timbrd、Agzy、Bilin。本站与 Apple 无隶属关系。</footer>
+    <noscript><p>请启用 JavaScript 使用应用搜索与历史版本查询。</p></noscript>
+</div>
+
+</main><footer class="site-footer">独立部署 · 使用自己的 Apple 账户 · 仅供账号本人使用</footer></body></html>
