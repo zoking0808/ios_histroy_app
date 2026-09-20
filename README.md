@@ -10,6 +10,37 @@
 
 可在线体验应用搜索、历史版本查询和账号下载流程。也可以使用下方 Docker 命令独立部署。
 
+## 界面截图
+
+### 应用搜索
+
+选择 App Store 地区，搜索应用并查看历史版本。
+
+![应用搜索与商店地区选择](docs/screenshots/app-search.png)
+
+<details>
+<summary>查看验证码验证、安装包生成与下载完成截图</summary>
+
+### 验证码验证
+
+提交账号密码后，只有 Apple 要求进一步验证时才显示验证码输入。截图展示一次验证过程。
+
+![Apple 验证码输入与继续验证](docs/screenshots/two-factor-verification.png)
+
+### 安装包就绪
+
+使用自己的 Apple 账户验证后，页面提供安装包名称、大小及限时下载入口。
+
+![安装包就绪与限时下载入口](docs/screenshots/package-ready.png)
+
+### 下载完成
+
+安装包按应用名称和版本号命名，便于保存和识别。
+
+![浏览器中已下载的 IPA 文件](docs/screenshots/download-complete.png)
+
+</details>
+
 ## 启动
 
 安装并启动Docker及Docker Compose，在此目录运行：
