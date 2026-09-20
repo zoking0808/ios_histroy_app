@@ -18,7 +18,7 @@
 docker compose up -d --build
 ```
 
-浏览器打开 **http://localhost:8088/**。Windows PowerShell、macOS终端、Linux终端使用相同命令；默认配置无需额外`.env`文件。
+浏览器打开 [http://localhost:8088/](http://localhost:8088/)。Windows PowerShell、macOS终端、Linux终端使用相同命令；默认配置无需额外`.env`文件。
 
 停止服务但保留数据：
 
